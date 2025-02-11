@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Rewrite rule for blog pages
+RewriteRule ^blog/([a-zA-Z0-9_-]+)/?$ blog.php?page_url=$1 [L,QSA]
